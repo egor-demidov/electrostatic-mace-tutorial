@@ -1,0 +1,45 @@
+tolerance 2.0
+filetype xyz
+output bulk_solution_with_ions.xyz
+
+seed -1
+movebadrandom
+
+# Simulation cell dimensions
+pbc 0.0 0.0 0.0 20.0 20.0 12.0
+
+structure Na.xyz
+    number 1
+    center
+    fixed 5.0 5.0 6.0 0.0 0.0 0.0
+end structure
+
+structure Cl.xyz
+    number 1
+    center
+    fixed 15.0 5.0 6.0 0.0 0.0 0.0
+end structure
+
+structure Na.xyz
+    number 1
+    center
+    fixed 15.0 15.0 6.0 0.0 0.0 0.0
+end structure
+
+structure Cl.xyz
+    number 1
+    center
+    fixed 5.0 15.0 6.0 0.0 0.0 0.0
+end structure
+
+structure ../HgCl2_minimization/HgCl2_minimized.xyz
+    number 1
+    center
+    fixed 10.0 10.0 6.0 0.0 0.0 0.0
+end structure
+
+# Read the minimized water and randomly insert N molecules
+structure ../../01_molecule_minimization/water_minimization_mace/water_minimized.xyz
+    number 130
+end structure
+
