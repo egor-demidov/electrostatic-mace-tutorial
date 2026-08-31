@@ -17,7 +17,7 @@ source /project/khalizov/mace-environment/mace-env.sh
 
 # Run part 1: water molecule minimization
 cd 01_molecule_minimization
-srun python 01a_minimiza_water_with_mace.py
+srun python 01a_minimize_water_with_mace.py
 cd ..
 
 # Run part 2:
