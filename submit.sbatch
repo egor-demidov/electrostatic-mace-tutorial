@@ -23,7 +23,7 @@ cd ..
 # Run part 2:
 #   - HgCl2 molecule minimization
 #   - Solution minimization and MD
-cd 02_bulk_solution_nvt
+cd 02_bulk_solution_md
 srun python 02a_minimize_HgCl2.py
-srun python 02c_run_nvt.py
+srun python 02c_run_md.py
 cd ..
