@@ -15,4 +15,6 @@
 !01_molecule_minimization/*/
 !02_bulk_solution_md/
 !02_bulk_solution_md/*/
+!03_adsorption_md/
+!03_adsorption_md/*/
 
