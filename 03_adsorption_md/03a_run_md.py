@@ -21,7 +21,7 @@ nz = 2         # conventional cells thick = 6 NaCl(001) atomic planes
 vacuum = 8.0   # vacuum on each side, Å
 
 # NVT simulation parameters
-temperature_K = 400.0
+temperature_K = 300.0
 timestep_fs = 0.5
 friction_fs_inv = 0.002     # damping time = 500 fs
 steps = 10_000_000          # 5 ns at 0.5 fs

@@ -9,6 +9,7 @@
 #SBATCH --account=khalizov
 #SBATCH --mem=20G
 #SBATCH --job-name="mace-run"
+#SBATCH --mail-user mb2268@njit.edu
 #SBATCH --output="mace-run-2026-08-31.output"
 
 ### Configure the environment ###
@@ -16,17 +17,17 @@
 source /project/khalizov/mace-environment/mace-env.sh
 
 # Run part 1: water molecule minimization
-cd 01_molecule_minimization
-srun python 01a_minimize_water_with_mace.py
-cd ..
+#cd 01_molecule_minimization
+#srun python 01a_minimize_water_with_mace.py
+#cd ..
 
 # Run part 2:
 #   - HgCl2 molecule minimization
 #   - Solution minimization and MD
-cd 02_bulk_solution_md
-srun python 02a_minimize_HgCl2.py
-srun python 02c_run_md.py
-cd ..
+#cd 02_bulk_solution_md
+#srun python 02a_minimize_HgCl2.py
+#srun python 02c_run_md.py
+#cd ..
 
 # Run part 3: HgCl2 molecule adsorbed to a NaCl slab
 cd 03_adsorption_md
