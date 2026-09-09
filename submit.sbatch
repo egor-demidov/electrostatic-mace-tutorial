@@ -24,10 +24,10 @@ source /project/khalizov/mace-environment/mace-env.sh
 # Run part 2:
 #   - HgCl2 molecule minimization
 #   - Solution minimization and MD
-#cd 02_bulk_solution_md
-#srun python 02a_minimize_HgCl2.py
+cd 02_bulk_solution_md
+srun python 02a_minimize_HgCl2.py
 #srun python 02c_run_md.py
-#cd ..
+cd ..
 
 # Run part 3: HgCl2 molecule adsorbed to a NaCl slab
 cd 03_adsorption_md
