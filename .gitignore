@@ -17,6 +17,8 @@
 !02_bulk_solution_md/*/
 !03_adsorption_md/
 !03_adsorption_md/*/
+!04_free_energy_sampling/
+!04_free_energy_sampling*/
 
 !02_bulk_solution_md/02_plot.png
 !03_adsorption_md/03_plot.png
